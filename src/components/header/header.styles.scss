@@ -1,0 +1,19 @@
+.header {
+  padding: 15px 0;
+  border-bottom: 1px solid #aaaaaa;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  padding: 8px 10px 10px;
+  background-color: #000000;
+  color: #ffffff;
+  display: inline-block;
+  line-height: 1;
+  text-decoration: none;
+  span {
+    display: block;
+    text-transform: uppercase;
+  }
+}

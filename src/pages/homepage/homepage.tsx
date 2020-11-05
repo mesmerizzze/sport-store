@@ -1,12 +1,13 @@
 import React from 'react'
-import Categories from '../../components/categories/categories'
+import Catalogue from '../../components/catalogue/catalogue'
+import { collections as collectionsData } from '../../data/data'
 
 import './homepage.styles.scss'
 
 function Homepage() {
   return (
     <div className="homepage">
-      <Categories />
+      <Catalogue data={collectionsData} />
     </div>
   )
 }

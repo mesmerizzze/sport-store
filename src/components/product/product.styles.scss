@@ -1,5 +1,21 @@
 .product {
-    width: 150px;
-    height: 150px;
-    border: 1px solid pink;
+  display: flex;
+  flex-direction: column;
+}
+
+.pic {
+  flex-grow: 1;
+  overflow: hidden;
+  img {
+    max-width: 100%;
+    height: auto;
+    object-position: center;
+    object-fit: cover;
+  }
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

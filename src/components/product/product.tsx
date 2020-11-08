@@ -1,18 +1,23 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import { ProductType } from '../../data/data'
 
 import './product.styles.scss'
 
 interface ProductProps {
   data: ProductType
+  collection: string
 }
 
-function Product({ data }: ProductProps): React.ReactElement {
+function Product({ data, collection }: ProductProps): React.ReactElement {
   return (
     <div className="product">
-      <Link to="/">Link</Link>
-      <p>{data.model}</p>
+      <div className="pic">
+        <img src={`${process.env.PUBLIC_URL}/images/${collection}/${data.pic}`} />
+      </div>
+      <div className="info">
+        <p>{data.model}</p>
+        <span>{data.price}</span>
+      </div>
     </div>
   )
 }
